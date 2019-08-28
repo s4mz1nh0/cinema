@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exercicio2poo2.FXMLDocumentController">
+   <children>
+      <Label layoutX="179.0" layoutY="14.0" text="QUAL FILME VOCÊ PREFERE?" textFill="#2e22dd">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="CheckBoxAcao" layoutX="58.0" layoutY="70.0" mnemonicParsing="false" text="Ação">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckBoxTerror" layoutX="162.0" layoutY="70.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="104.0" text="Terror">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckBoxRomance" layoutX="301.0" layoutY="70.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="119.0" text="Romance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="CheckBoxComedia" layoutX="434.0" layoutY="70.0" mnemonicParsing="false" text="Comédia">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="131.0" layoutY="114.0" text="Qual filme você gostaria de ver agora?" textFill="#2e2aeb">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Radio1" layoutX="85.0" layoutY="165.0" mnemonicParsing="false" text="Jumanji">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Filme" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="Radio2" layoutX="258.0" layoutY="165.0" mnemonicParsing="false" text="Titanic" toggleGroup="$Filme">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="Radio3" layoutX="394.0" layoutY="165.0" mnemonicParsing="false" text="Nenhum" toggleGroup="$Filme">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="30.0" layoutY="208.0" text="Qual sua opnião sobre os filmes apresentados na questão anterior?" textFill="#5335ff">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="TextAreaOpniao" layoutX="41.0" layoutY="236.0" prefHeight="127.0" prefWidth="511.0" />
+      <Label fx:id="LabelRespostas" layoutX="34.0" layoutY="375.0" text="RESPOSTAS:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="222.0" layoutY="450.0" mnemonicParsing="false" onAction="PegarRespostas" text="Clique para ver respostas" />
+   </children>
+</AnchorPane>
